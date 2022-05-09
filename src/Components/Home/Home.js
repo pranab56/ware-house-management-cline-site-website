@@ -15,7 +15,7 @@ const Home = () => {
                 <Carousel></Carousel>
             </div>
             <div>
-                <h2 className="text-center">Collections:</h2>
+                <h2 className="text-center">Collections</h2>
                 <Extra1></Extra1>
             </div>
             <div className='mt-5'>
