@@ -11,14 +11,14 @@ const InItems = ({ item, handleDelete }) => {
         navigate(`/inventory/${_id}`)
     }
     return (
-        <div>
+      
             <CardGroup className='shadow mb-5 bg-body rounded'>
                 <Card>
                     <div>
                         <Card.Img variant="white img-fluid" style={{height:'360px' , width:'450px'}} src={img} />
                     </div>
                     <Card.Body>
-                        <Card.Title>{name}</Card.Title>
+                        <Card.Title>Name : {name}</Card.Title>
                         <h6>Price: ${price}</h6>
                         
                         <p style={{textAlign: "justify"}}>{description}</p>
@@ -31,7 +31,7 @@ const InItems = ({ item, handleDelete }) => {
                     </div>
                 </Card>
             </CardGroup>
-        </div>
+       
     );
 };
 
