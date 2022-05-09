@@ -86,7 +86,7 @@ const Login = () => {
                   required
                 />
               </div>
-              <button className="container border-0 mt-4 btn-primary">
+              <button className="container border-0 mt-4 btn-primary rounded">
                 Login
               </button>
               <div className="d-flex justify-content-center align-items-center mt-3">
