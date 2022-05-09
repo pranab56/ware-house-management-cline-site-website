@@ -15,14 +15,14 @@ const InItems = ({ item, handleDelete }) => {
             <CardGroup className='shadow mb-5 bg-body rounded'>
                 <Card>
                     <div>
-                        <Card.Img variant="white img-fluid" style={{height:'360px' , width:'450px'}} src={img} />
+                        <Card.Img variant="white img-fluid" style={{height:'360px', width:'450px'}} src={img} />
                     </div>
                     <Card.Body>
                         <Card.Title>Name : {name}</Card.Title>
                         <h6>Price: ${price}</h6>
                         
                         <p style={{textAlign: "justify"}}>{description}</p>
-                        <p><span className='fw-bold'>Quantity/In-Stock:</span> <span className='text-danger fw-bold'> {quantity} KG</span></p>
+                        <p><span className='fw-bold'>Quantity/In-Stock:</span> <span className='text-danger fw-bolder'> {quantity} KG</span></p>
                         <p><span className='fw-bold'>SupplierName:</span> {supplierName}</p>
                     </Card.Body>
                     <div className='d-flex justify-content-between card-footer'>
