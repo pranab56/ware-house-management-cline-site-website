@@ -10,7 +10,7 @@ const Update = () => {
   const [Items, setItems] = useState({});
   
   useEffect(() => {
-    const url = `http://localhost:5000/inventory/${inventoryId}`;
+    const url = `https://safe-coast-41091.herokuapp.com/inventory/${inventoryId}`;
     fetch(url)
       .then(res => res.json())
       .then(data => setItems(data));
@@ -39,8 +39,9 @@ const Update = () => {
   };
 
   const handleDeliver = (id) => {
-    const quantityUpdate = Items?.quantity;
-    const updateQuantity = { quantityUpdate };
+      
+    const quantity = Items?.quantity;
+    const updateQuantity = { quantity };
     fetch(`https://safe-coast-41091.herokuapp.com/items/deliver/${id}`, {
       method: "PUT",
       headers: {
@@ -51,6 +52,7 @@ const Update = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log("success", data);
+       
       });
   };
 
