@@ -12,7 +12,7 @@ const Inventory = () => {
     }, [])
 
     const handleDelete = id => {
-        const proceed = window.confirm('Are you sure ?');
+        const proceed = window.confirm('Are you sure delete it?');
         if (proceed) {
             const url = `https://safe-coast-41091.herokuapp.com/inventory/${id}`;
             fetch(url, {
