@@ -24,7 +24,7 @@ const Review = () => {
                     <div className="col-lg-4 ">
                         <div className="card color2 shadow mb-5 bg-white rounded h-70">
                             <div>
-                                <p className='text-center fw-bold'><i className="fa-solid fa-quote-left"></i> This warehouse fruits are very fresh and well.. <i className="fa-solid fa-quote-right"></i></p>
+                                <p className='text-center fw-bold'><i className="fa-solid fa-quote-left"></i> This warehouse fruits are very fresh and good.. <i className="fa-solid fa-quote-right"></i></p>
                             </div>
                             <div className='d-flex justify-content-center'>
                                 <img className='rounded-circle' src={pic3} alt="" />
